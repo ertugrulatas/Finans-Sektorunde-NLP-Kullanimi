@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        <link rel="canonical" href="https://github.com/ertugrulatas/Finans-Sektorunde-NLP-Kullanimi/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>FİNANS SEKTÖRÜNDE NLP KULLANIMI</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">FİNANS SEKTÖRÜNDE NLP KULLANIMI</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#giris" class="nav-link">GİRİŞ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#dogal-dil-isleme" class="nav-link">DOĞAL DİL İŞLEME</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#finans-sisteminde-nlp" class="nav-link">FİNANS SİSTEMİNDE NLP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#dogal-dil-isleme-uygulama-ornekleri" class="nav-link">DOĞAL DİL İŞLEME UYGULAMA ÖRNEKLERİ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#sonuc" class="nav-link">SONUÇ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#kaynakca" class="nav-link">KAYNAKÇA</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="giris">GİRİŞ</h1>
+<p style="text-align:justify">Bilgisayar ve iletişim teknolojilerindeki gelişmeler bütün sektörlerde olduğu gibi finans sektöründe de köklü değişikliklere yol açmıştır. Yirminci yüzyılın son çeyreğinden itibaren bilgisayar ve yapay zekâ kullanımı finansta derin bir paradigma değişiminin önünü açarak, finans faaliyetlerini insanın yanı sıra makine merkezli hale getirmiş, insanlar gibi makinelerin de finans sektöründe birer aktör olarak yer almalarına neden olmuştur.
+Yapay zekâ, insan zekasını taklit eden sistemler veya makineler anlamına gelir. Makine öğrenmesi ve derin öğrenme, yapay zekanın alt dalları olarak, verilerden öğrenerek çeşitli görevleri yerine getirebilen algoritmalar ve modeller geliştirmeyi amaçlayan tekniklerdir. Makine öğrenmesi, verilerdeki kalıpları belirlemek için istatistiksel ve matematiksel yöntemler kullanırken, derin öğrenme, çok katmanlı yapay sinir ağları kullanarak daha karmaşık ve soyut problemleri çözmeye çalışır.
+Son yıllarda bilim, teknoloji, sağlık, eğitim, sanat gibi birçok alanda büyük ilerlemeler sağlamıştır. Finans alanı da makine öğrenimi ve derin öğrenme yöntemlerinin potansiyel faydalarından yararlanabilecek alanlardan biridir. Örneğin, çok yüksek miktarlarda haber ve veriyi derleyerek analiz eden bir yapay zekâ sistemi ile finansal teknik ve temel analizlere kısa sürede ve kolayca ulaşma imkânı sağlanabilmektedir.
+Finans, veriye dayalı ve akıllı çözümler gerektiren karmaşık ve dinamik problemler içerir. Bu problemler arasında finansal tahmin, risk yönetimi, dolandırıcılık tespiti, portföy optimizasyonu ve algoritmik ticaret gibi uygulamalar yer alır.
+</p>
+<h1 id="dogal-dil-isleme">DOĞAL DİL İŞLEME</h1>
+<p style="text-align:justify">Doğal dil işleme, makinelere insan dil bilimi yapısını öğreterek makinelerin insan dili temelli içerikleri anlaması ve üretmesi olarak tanımlanmaktadır. Doğal dil işlemenin ortaya çıkışındaki temel amaç; makinelerle iletişimde kullanılan karmaşık programlama dilleri yerine insan ve makinelerin aynı dili konuşması vasıtasıyla birbirleriyle iletişimlerinde oluşan boşluğun kapatılmasını sağlamaktır. Doğal dil işleme, insan diliyle oluşturulmuş girdilerin çeşitli algoritmalarla işlenerek yararlı çıktılar oluşturulmasını sağlayan bir yapay zekâ alanıdır. Doğal dil işleme alanı üzerine yoğun çalışmalar yapılıyor olması, insan beyninin algılama ve anlama yapısını taklit etmeye çalışmasından ve yapay zekânın en zor alanlarından biri olmasından kaynaklanmaktadır. Doğal dil işleme, problemleri çözmek için istatiksel kurallar ve analiz tabanında makine öğrenmesi ve derin öğrenme algoritmalarıyla beraber oluşturulan hibrit bir yapıdır.
+Doğal dil işleme temel olarak iki alt göreve sahiptir. Bu görevler,</p>
+
+<ul>
+<li>Doğal Dil Anlama: Eldeki metinden dilin sadece dil bilgisi yapısını ele almaz, metinden çıkarılacak anlamları ve anlamsal bütünlüğü de inceler.</li>
+<li>Doğal Dil Üretimi: Daha önceki metinlerle sistem eğitilerek eğitimde kullanılan dille ilgili yeni ürünler elde edilir.
+Doğal dil işlemenin son 20 yılda bu kadar başarılı olmasının 4 ana sebebi vardır. Bu sebepler</li>
+<li>Makinelerin işlem güçlerinin artması ve doğal dil işlemede kullanılan algoritmaların daha tutarlı ve daha hızlı çalışması,</li>
+<li>Teknolojinin gelişmesiyle beraber dilsel verilerin depolanmasının kolaylaşması ve dilsel veri alanında büyük veri kaynaklarının oluşması,</li>
+<li>İnsan dili ve konuşması arasındaki dil bilimi bağlamlarının daha fazla çözümlenmeye başlaması,</li>
+<li>
+<p>Doğal dil işlemede kullanılacak yeni makine öğrenmesi algoritmaları geliştirilmesi ve eski algoritmaların daha işler hale getirilmesidir.
+Doğal dil işlemenin gelişmesinde yukarıda anlatılan durumlara ek olarak doğal dil işlemede yapılan ilk çalışmalardaki anlayış günümüzde değişmiştir. Doğal dil işleme üzerinde yapılan ilk çalışmalar genellikle insan dilinin kurallarını ve sözcük dağarcığını sisteme tanımlamaya çalışmaktadır. Bu durum dillerin karmaşıklığı ve dildeki kelimelerin anlam belirsizliği gibi sebeplerden ötürü doğal dil işleme sistemlerin gelişmesini geciktirmiştir. 2000’lı yılların başında ise istatiksel hesaplamalar kullanılarak bütünsel metinler analiz edilmeye başlanmıştır.
+Doğal dil işleme çalışmaları temel anlamda iki alanda yoğunlaşmaktadır. Bu alanlar,</p>
+</li>
+<li>
+<p>Metin (Text): Chatbotlarla sorulara cevap verme, akıllı cihazlardaki metinlerin tamamlanması, pazarlama dünyasındaki büyük metinlerin özetlenerek kişiye özgü reklam gösterilmesi ve dillerin birbirine kolayca transfer edilmesi gibi bir çok alanda örnekleri bu alana örnek verilebilir.</p>
+</li>
+<li>Ses (Speech): Alexa, Siri, Google Asistan gibi kişisel sesli asistan bu alanlardaki en yaygın doğal dil işleme örnekleridir.</li>
+</ul>
+<h1 id="finans-sisteminde-nlp">FİNANS SİSTEMİNDE NLP</h1>
+<p style="text-align:justify">Finans ve bankacılık şirketlerindeki çalışma modellerini değiştirmekle birlikte ürün oluşturma, pazarlama ve iletişim alanında hâlihazırda NLP oldukça geniş bir ölçekle kullanılmaktadır. Sorunlara hızlı cevap vermek, verimliliği artırmak ve işleyişi hızlandırmak adına bankacılık ve finans sektörüne de katkıları yadsınamaz bir gerçek olarak karşımızda durmaktadır.</p>
+
+<p style="text-align:justify">NLP’nin amacı, analitik olmayan insan bilgisini hesaplamaya dönüştürmekte ve bunu oldukça iyi başarmaktadır. Hesaplama süreçleri, birbiriyle bağlı ağlar veya bir algoritmadan elde edilen verileri anlamlı bir bütün haline getirmeyi NLP’den başkası başaramazdı. Böylece NLP, çift hatlı analize sahip bir bilim olarak korelasyona dayalı bir veri yığını ve teorik çıkarsamalar yapacak bilgi düzeyi şeklinde tasarlanmıştır. Geçmişi ve geleceği tanımlamaya ve tahmin etmeye katkıda bulunan daha yüksek bir bilgi düzlemi tabii olarak finans sistemi için rasyonalize edilecektir.</p>
+
+<p style="text-align:justify">Finansal sistemin bankacılık merkezli olması dolayısıyla NLP’nin bankacılık sistemin üzerinden finans sektörüne ne gibi etkileri olduğunu ortaya çıkarmak daha anlaşılır olacaktır. Buna göre ortak görüşler bankacılıkta NLP kullanımının özellikle oyun değiştiren rolüne vurgu yapmaktadırlar. Aynı zamanda geliştirilen özellikler daha çok veri işlemek ve işleyişi hızlandırmakla yakından ilgilidir. Bu bağlamda tüm dünyanın entegre olduğu finans sisteminde ortaya çıkan büyük veri yığınını kontrol etmek ve denetlemek çok zor hale geldiği
+görülmektedir. NLP ilk olarak bu veri yığınını anlamlı bir bütün haline getirmeyi başarmaktadır. Hatta finansal sistemde veri yığının oluşturabileceği çatlak ve yıkımların da önüne geçmektedir. Büyük veriyi derleyen banka sistemi bu veri yığınını banka müşterilerine kişisel hizmet vermek için kullanma olanağına da kavuşmaktadır. Artık banka kuruluşları karar verme süreçlerinde ve bilgilendirme aşamasında kişisel bilgileri kullanabilmekte, işlem geçmişi ve sosyal medya hareketleri de dahil olmak üzere müşterisine 360 derecelik bir görünüm sağlayabilmektedir.</p>
+
+<p style="text-align:justify">NLP sunmuş olduğu bulut teknolojisiyle yüksek hesaplama teknikleri kolaylıkla banka sistemine dâhil edilmiş ve verilerin toplanıp kullanılmasını daha hızlı hale getirmiştir. Bulut teknolojisi aynı zamanda düzenleyici ve denetleyici işlemlerde bankanın hesap verilebilirliğini kolaylaştırmakta, şeffaflığın etkin bir şekilde kullanılmasına da yardımcı olmaktadır. NLP girmiş olduğu finans sisteminde rekabet daha canlı hale gelmektedir.
+Bankacılık sektörünün sürekli kendini geliştirmek ve değiştirmek zorunda olması NLP’nin etkin kullanımı sonucunda olduğu ve bu da finans sistemi için iyiye yönelik bir süreç olduğu belirtilmektedir. Biraz daha somut örneklerden yola çıkarsak bankacılık ve finans sisteminde gelişmiş Sahtekarlık Tespiti, Chatbot, Gelişmiş İç Süreçler, Raporlama ve Analiz gibi birçok alanda NLP kullanılmaktadır. </p>
+
+<h3 id="veri-temizleme">Veri temizleme</h3>
+<p style="text-align:justify">Veri temizleme aşamasında, veri setinde sadece numerik olmayan karakterler kalacak şekilde işlemler gerçekleştirilir. Dokümanlarda yer alan URL’ler temizlenir, noktalama işaretleri kaldırılır, ardından numerik karakterler temizlenir, şapkalı harfler şapkasız eşlenikleri ile değiştirilir ve veri setinde yer alan tüm karakterler küçük harflere çevrilir.</p>
+
+<h4 id="cumleyi-dizgeciklere-ayrma">Cümleyi dizgeciklere ayırma</h4>
+<p style="text-align:justify">Her bir dokümanın kendi içerisinde kelimelere & dizgeciklere bölünmüş halini ifade etmektedir.</p>
+
+<h4 id="hatal-yazm-duzeltme">Hatalı yazım düzeltme</h4>
+<p style="text-align:justify">Hatalı yazım düzeltme ilgili dokümanda yer alan kelimelerdeki gürültüyü azaltma işlemlerinden biridir. Kelimelerin yanlış yazımının düzeltilmesi, karakter büyüklüğü ve küçüklüğünün düzeltilmesi, kısaltmaların düzeltilmesi gibi işlemlerin yapılması işidir.</p>
+
+<h4 id="kok-bulma">Kök bulma</h4>
+<p style="text-align:justify">Kök bulma, kelimelerin eklerinden kurtarılarak en basit haline dönüştürülmesi işlemidir.
+Örneğin; metinlerde, “kredi” kelimesinin “kredisinin”, “kredili”, “kredisine”, “krediler” vb. şeklinde çekimlenmiş halleri yer alabilmektedir. Belirtilen 4 farklı kelime, kök bulma ön işlem sürecine dahil edildiğinde, her birinin kökü “kredi” olarak ortaya çıkacak ve 4 değişken 1 değişkene indirgenmiş olacaktır.</p>
+
+<h4 id="etkisiz-kelimelerin-kaldrlmas">Etkisiz kelimelerin kaldırılması</h4>
+<p style="text-align:justify">Veri setinin içerdiği, ilgili dokümana katkısı olmayacak olan kelimeler etkisiz kelimeler olarak adlandırılmaktadır. Bağlaçlar, sık kullanıma sahip olan kelimeler, dokümana katkısı olmayan etkisiz kelimelere örnek olup dokümandan kaldırılması, çalışma başarısını arttırabilmektedir. Etkisiz kelimeler belirlenirken doğal dil işleme için oluşturulmuş kütüphanelerin listeleri veya sıfırdan oluşturulan etkisiz kelime listeleri kullanılabilir.</p>
+
+<h3 id="kelime-gomme-yontemleri">Kelime Gömme Yöntemleri</h3>
+<p style="text-align:justify">Jurafsky ve Martin’e göre doğal dil işlemede kelime gömme, kelimelerin anlamlarının bir temsilidir. Yani, dokümanları makinelerin anlayabileceği hale getirebilmek için vektörel hale getirmek & sayısallaştırmaktır. Kısaca her bir kelimeyi sayısal bir ifade ile temsil etme yöntemidir. Bu yöntem bir çeşit dil modelleme tekniğidir. Dokümanlarda yer alan kelimeler sayısallaştırılarak, her biri birer vektör haline getirilip vektör uzayında temsil edilmektedir.
+Kelime temsil yöntemleri yapay sinir ağları, istatistik ve olasılık modelleri kullanılarak oluşturulmaktadır. Günümüzde ise birden fazla kelime temsil yöntemi vardır. Bu yöntemlerden bazıları frekans bazlı yöntemler, bazıları ise tahmin bazlı yöntemlerdir.</p>
+
+<h4 id="frekans-bazl-kelime-temsil-yontemleri">Frekans bazlı kelime temsil yöntemleri</h4>
+<p style="text-align:justify">Kelimelerin dokümanda geçme sıklığı temel alınarak hesaplamalar yapılmakta ve kelimelerin sayısal temsilleri oluşturulmaktadır. Frekans bazlı kelime temsil yöntemlerinde kelimeler arasında anlamsallık aranmaz.</p>
+
+<h5 id="tf-idf-terim-frekans-ters-dokuman-frekans">TF-IDF (Terim Frekansı - Ters Doküman Frekansı)</h5>
+<p style="text-align:justify">Doküman terim ağırlıklandırma 1957 yılında Hans Peter Luhn tarafından, ters doküman ağırlığı ise 1972 yılında Karen Spärck Jones tarafından tasarlanmıştır. Aizawa’ya göre TF-IDF kelime temsil yöntemi kelimelerin dokümanlar içerisindeki matematiksel önemini belirlemeye yarayan istatistiksel bir ölçüdür.
+Bir vektör uzay modeli olan bu yöntemde kelimelerin metin içerisinde geçme sıklıklarına göre frekanslar oluşturulur.
+TF değeri, kelimelerin dokümanda geçme sıklığını belirler. Yani terim sıklığı, doküman içerisindeki ilgili terim sayısının, dokümandaki toplam terim sayısına oranını ifade eder. Ağırlıklandırma yönteminde dokümanda daha fazla geçen kelimeler yani TF değeri büyük olan kelimeler doküman için değerlidir.
+IDF değeri ise dokümanda seyrek geçen kelimeler ile ilgili bilgi vermektedir. Yani toplam doküman sayısının, ilgili terimin geçtiği doküman sayısına olan oranının logaritmasının mutlak değerini ifade eder. IDF değeri ilgili doküman için belirleyici özellik olabilmektedir.</p>
+
+<h4 id="tahmin-bazl-kelime-temsil-yontemleri">Tahmin bazlı kelime temsil yöntemleri</h4>
+<p style="text-align:justify">Tahmin bazlı kelime temsil yöntemleri, temelinde dokümanları yapay sinir ağı ilkesine bağlı olarak eğitmektedir. Kelimeler arasında anlamsal bağlar kurularak vektörleştirme yapılmaktadır. Birden fazla tahmin bazlı kelime temsil yöntemi bulunmaktadır.</p>
+
+<h5 id="word2vec"><u>Word2vec</u></h5>
+<p style="text-align:justify">Word2vec, tahminleme bazlı bir kelime temsil yöntemidir. 2013 yılında Mikolov ve arkadaşları tarafından ortaya çıkarılmıştır. Danışmansız / denetimsiz öğrenme yaklaşımını temel alınır ve yapay sinir ağı ilkelerine bağlı kalınarak kelimeler eğitilir.
+Giriş, gizli ve çıkış olmak üzere 3 katmandan oluşur. Hiper parametrik olan bu yöntem, ilgili veri seti için en uygun parametreleri alarak, kelimelerin veri seti içerisindeki konumuna göre vektör oluşturmaktadır. Bu yöntem uygulanırken, oluşturulan model parametreleri için, en iyi değerleri belirleyen hesaplamalar literatürde mevcut değildir. İlgili veri setinin özellikleri göz önünde bulundurularak birden fazla model denemesi ile en iyi parametrelere ve modele karar verilebilmektedir.</p>
+
+<h5 id="doc2vec"><u>Doc2vec</u></h5>
+<p style="text-align:justify">Doc2vec, Word2vec’in temsilcileri olan Le ve Mikalov’un doküman temsilleri elde etmek için 2014 yılında ortaya çıkardıkları bir yöntemdir. Denetimsiz öğrenme temelli Word2vec yöntemini temel alarak oluşturulmuştur. Doküman uzunluğuna bakılmaksızın dokümanların sayısal temsilini oluşturmaktadır.</p>
+
+<h5 id="boyut-kucultme"><u>Boyut Küçültme</u></h5>
+<p style="text-align:justify">Boyut küçültme, çok boyutlu veri setlerinde yok denecek seviyelerde bilgi kaybını amaçlayarak, veri setini eşdeğeri olan daha küçük boyutlara dönüştürme tekniğidir. Metin madenciliği çalışmalarında, küçük metinler dahil olmak üzere çok fazla öznitelik (boyut) çıkarımı olabileceğinden boyut küçültme, en önemli aşamalardan biridir. Literatürde birçok boyut küçültme tekniği yer almaktadır.</p>
+
+<h5 id="kumelendirme-yontemleri"><u>Kümelendirme Yöntemleri </u></h5>
+<p style="text-align:justify">Kümeleme analizinin temel amacı, ilgili veri setinde grupları belli olmayan verilerin ilgili benzerlik değerine göre kümelere dahil edilerek gruplandırılmasıdır. En iyi denetimsiz makine öğrenmesi yöntemlerinden biridir.
+Kümeleme analizi, veri setinin doğal sınıflamaları hakkında bilgi sahibi olunmayan durumlarda, veri setine ilişkin tahminlerin yapılması için kullanılan teknikler bütünüdür.</p>
+
+<h5 id="benzerlik-hesaplama-yontemleri"><u>Benzerlik Hesaplama Yöntemleri</u></h5>
+<p style="text-align:justify">N boyutlu vektör uzayında her bir metin belirli bir konuma sahiptir. Metinlerin konumlarını ifade eden vektörler kullanılarak metinlerin birbirlerine olan benzerlikleri hesaplanabilmektedir. Vektörler arasındaki benzerlikleri hesaplayabilmek için benzerlik ölçütü olarak kosinüs benzerliği kullanılmıştır.</p>
+
+<h3 id="chatbot">ChatBot</h3>
+<p style="text-align:justify">NLP birleştirilmiş yapay zekâ destekli sohbet robotları müşterilerle 7/24 iletişim kurulmasına olanak sağlamaktadır. Sohbet robotları tipik cevaplar yerine müşterileri ilgili birime yönlendirebiliyor ve müşteri hesapları hakkında arayana bilgi verebilmektedir. Sohbet robotları aynı zamanda banka müşterilerinin tamamına ulaşma gibi bir görev de yerine getirmektedir. Banka çalışanlarının fiziki olarak yapamayacağı bu görev yazılım robotları sayesinde kolaylıkla yapılabilmektedir.</p>
+
+<h3 id="dolandrclk-tespiti-ve-onleme">Dolandırıcılık Tespiti ve Önleme</h3>
+<p style="text-align:justify">Çok yakın zamana kadar bankalar kara parayı aklamada geleneksel olarak benimsenmiş yöntemleri kullandırmıştır. Bu sistem üstesinden gelinebilen özellikler göstermiştir. Bu nedenle yeni dolandırıcılık ve yeni sahtekarlıklara karşı yetersiz kalmıştır. NLP ile birlikte yeni dolandırıcılık yöntemleri kolaylıkla tespit edilebilmekte ve etkisiz hale getirilebilmektedir. Ayrıca müşteri desteği hizmetiyle müşterilerin dolandırılmasını da engelleyebilmektedir. Şüpheli faaliyetlerin tespit edilmesi de çok kolaylaşmaktadır.</p>
+
+<h3 id="raporlama-ve-analiz">Raporlama ve Analiz</h3>
+<p style="text-align:justify">Geçmişte bankaya gitmek zorunda kalınan veya ATM ile yapılan işlemler artık daha kolay bir biçimde mobil uygulamalar yoluyla yapılabilmektedir. Mobil uygulamalarda hesap bakiyesini kontrol edebilme, işlem yapabilme ve tüm mevduatla ilgili bilgi akışı sağlanabilmektedir. Ayrıca kişiler portföyünün hangi durumda olduğu, geleceğe ilişkin yatırım ve kredi beklentilerini uygulama üzerinden kolaylıkla görebilmektedir.</p>
+
+<h3 id="diger-islemler">Diğer İşlemler</h3>
+<p style="text-align:justify">Palpay, akıllı cüzdanlar veya dijital cüzdanlar gibi önemli aktörlerin finans sistemine entegre olması hem para akışını daha güvenli hale getirmekte hem de fiziki paraya ihtiyaç duymadan işlemlerin yapılmasını kolaylaştırmaktadır. Satın alınacak, tasarruf yapılacak veya borsa işlemleri için zengin veri işlemeciliğiyle birlikte tüm işlemler tahmine dayalı ve hızla olabilmektedir. Finansal tavsiyeler için çok uzağa gitmeden akıllı uygulamalar asistanı vasıtasıyla kolaylıkla yardım alınabilmektedir. Gelecekle ilgili alışveriş, kredi kartı harcamaları NLP ile rasyonalize edilerek ve hesap edilebilirlik ilkesiyle daha rahat hale gelebilmekte ve yatırımın boyutunu belirleyebilmektedir.
+NLP uygulamaları son olarak finansal sistemde tüm işleri kategorize etme niteliğine de haizdir. Finansal verilerin hangi kategorik bağlam altına alınacağı ve bu kategoriye göre gelir-gider hesaplamalarının nasıl yapılacağı ilişkisini anında gösterilebilmektedir. Görüldüğü gibi NLP finansal sistemde bir devrimin adı olmaktadır.
+Finans sektöründe şirketler NLP alanına oldukça büyük yatırımlar yaptıkları görülmektedir. Öyle ki 2023 yılı itibariyle NLP’ye yatırım 93 milyar doları geçmiş durumdadır (Yıldırım, 2023).
+Finans ve bankacılık sisteminde NLP uygulamarının standartlaştırılması, daha şeffaf hale getirilmesi ve güvenilir bir hukuki bağlama oturtulması önem taşımaktadır. Müşteri hareketlerinin optimizasyonu sağlanırken müşteri bilgilerin hem güvende hem de onun aleyhine işlenebilecek bir şekilde kullanılmaması gereklidir.</p>
+
+<h1 id="dogal-dil-isleme-uygulama-ornekleri">DOĞAL DİL İŞLEME UYGULAMA ÖRNEKLERİ</h1>
+<p style="text-align:justify">Kredi ve diğer finansal ürünleri daha rantıbıl hale getirmek, geleceğe yönelik tahminlerde bulunmak, dünyada oluşan finansal trendleri takip etmek ve bu trendleri ülke içine uygulamak NLP ile daha kolay hale getirilebilir. Kolaylaştırmak tabi ki yatırımcı davranışlarını simüle edebilmek, hedef değerlendirmesi yapabilmek, portföy yönetimi ve optimal sermayenin belirlenmesiyle mümkün olabilecektir.
+Güvenlik ve şeffaflığın sağlanması için de bazı teknik ve yöntemler geliştirilmektedir. Bu yöntemlerin en bilineni ve literatürde sıkça kullanılan kavram ise Fraud Kontrolüdür. Fraud kontrolü daha çok hatalı bilgileri ve şüpheli işlemleri tespit etmeye çalışan ve bu tespit edilen bilgilerle kullanıcıları uyarmaya çalışan bir sistemdir. Herhangi bir kullanıcının sahte kimlik
+bilgileriyle yaptığı şüpheli işlemler “Fraud Kontrolünü Geçemedi” şeklinde bir uyarıyla durdurulmaktadır. Yine de bankacılık sisteminde yaygın olarak kullanılan bu güvenlik sistemlerinin finans kurumlarında da yaygınlaştırılması ve başka yöntemlerin de kullanılması piyasa, rekabet, ekonomi ve toplumların iktisadi geleceklerinin garantiye alınması adına gelişen teknolijiler ışığında gerekli görülmektedir. Güvenlik yöntemlerinin yaygınlaşması şeffaflığı da artırabilecektir.
+NLP’ye en fazla uyum sağlayan sektörler arasında gelen finans sektöründe yine NLP özelinde bankacılık işlemleri ön plana çıkmaktadır.
+Garanti BBVA, “doğal dil işleme teknolojisi ve biyometri” uygulaması kullanmaktadır. Kullanıcı veya müşterilerin sesle aktardığı bilgileri veriye dönüştürüp cevap verme teknolojisidir. Biyometri ise daha çok ses, yüz ve gözle tanıma işlemidir. Bu bağlamda şüpheli işlemlerin önüne geçilmesi arzu edilmektedir.
+İş Bankası da NLP’ye yatırım yapan başka bir banka olarak karşımıza çıkmaktadır. Geçtiğimiz yıllarda banka tarafından tanıtılan robot Pepper, müşterileri karşılamak, sıra numarası vermek ve müşteriler sıra beklerken onlarla sohbet edecek biçimde tasarlanmıştır. Aynı zamanda Maxi adlı yapay zekâ uygulaması hem ileti olarak hem sesli olarak müşterilerin istek ve taleplerini dikkate alması ve çözümler üretmesi için geliştirilmiştir.
+Akbank ve Yapı Kredi Bankaları da benzer yapay zekâ uygulamalarını devreye alarak finans sektöründe yeni gelişimlere ayak uydurabileciğini göstermiştir. Akbank akıllı telefon uygulamalarının müşterilerinin hayatında daha fazla yer etmesinden dolayı selfie teknolojisine dayanan Chatbot ile para transferi özelliği olan yapay zekâ uygulamasını devreye almıştır. Yapı Kredi Bankası ise KOBİ’lere yönelik geliştirdiği yapay zekâ uygulaması ile kredi işlemlerinde zamandan oldukça tasarruf eden bir sistem geliştirmiştir. Aynı zamanda Safir projesi ile müşterilerinin işleminde yarı yarıya zamandan tasarruf sağlandığı görülmüştür.
+NLP uygulamalarında belki de parekende sektöründe geliştirilen algoritmalar tüketici davranışını ve finans sektörünü derinden etkileme gücüne daha çok sahiptir. Google, Amazon gibi büyük firmaların bu algoritmaları etkin bir şekilde kullanıldığı bilinmektedir. Türkiye’de ise Migros Mağazaları, Yapay Zekâ Pazarlama Laboruvarı adını verdikleri merkezde geliştirdikleri uygulama sayesinde bu algoritmalardan faydalanarak müşterileri için daha kişisel bir alışveriş imkânı sunmaktadır.
+Aksigorta şirketi ise yine aynı yöntem ve teknolojiden yararlanarak yılda 2 milyon işlemin NLP tarafından yapılabileceğini, işlemlerin kaydedilip dataya dönüştürülebileceğini açıklamıştır. Böylelikle finans sektöründe operasyonel işler ve maliyetler azaltılmaktadır. Aynı zamanda dünyada gelişen ve özellikle finans sektöründe kullanılan NLP uygulamaları Türkiye’deki finans firmaları tarafından yakından izlenip ajanda ve yöntemlerin belirlendiği görülmektedir.</p>
+
+<h1 id="sonuc">SONUÇ</h1>
+<p style="text-align:justify">Daha hızlı veri analizi ve risk tespiti, daha az hataya sahip yüksek kaliteli denetim gibi avantajlar sağlayarak finans sisteminde yenilikler ve dönüşümler ile NLP kullanılması kaçınılmaz duruma gelmiştir. Fakat doğal dil işlemenin kullanımı kısıtlıdır ve özellikle büyük yatırımlar yapabilecek firmaların tekelinde kalmıştır. Doğal dil işlemenin belirli zorlukları vardır. Doğal dil işlemenin sahip olduğu tüm zorluklar insan dil yapısının ve düşünce sistematiğinin karmaşık yapıda olmasıdır. Bu noktada doğal dil işlemenin temel amacı olan makineleri insan beynine yakınsamanın zorluğunun rolü büyüktür.
+Bu çabaların yoğun emek ve sermaye ile gerçekleştirebileceği düşüncesi yaygın kanıdır. Oysaki küçük ve orta büyüklükte tabir edilen işletmeler ve de orta ölçekteki yerel denetim firmaları yazılım alanında yetişmiş ve kendi çabalarıyla bu alana yoğunlaşarak sektörel bazda NLP uygulamalarını gerçekleştirebilen kişilerden/yazılım firmalarından destek alarak kendi işletmelerinin ihtiyacına uygun bir doğal dil işleme uygulaması kullanmaya başlayabilirler.
+Diğer bir kısıt ise veri eksikliği olmaktadır, modelleri eğitmek için veri büyüklüğü önemli bir unsurdur. Eğer veri yeterli değilse model yetersiz beslenir ve doğru çıktılar elde edilmez. Yeterli büyüklükte veri elde edilmesi problemin çözümü için tek başına bir anlam taşımamakta olup problemin uzmanı tarafından doğru verinin seçilmesi de gerekmektedir.
+NLP kullanımı birçok imkân ve kolaylık doğursa da güvenlik ve sahtekârlık gibi durumlarda alınacak önlemlerin artırılmasını ve çeşitlendirilmesini de beraberinde getirmek zorundadır. Özellikle ülkelerin NLP ile ilgili çalışmaları denetlemesi ve kontrol etmesi gerekmektedir. Aynı zamanda dijitalleşen dünyada kişisel bilgilerin korunması ve NLP tarafından hangi bilgilerin algoritmik olarak işleneceği de hem devletlerin hem de şirketlerin şeffaflık politikalarının en başta gelen gereklerinden biri olması önem arz etmektedir.</p>
+
+<h1 id="kaynakca">KAYNAKÇA</h1>
+<ul>
+<li>1- İsmail Fatih Ceylan “Finans Alanında Makine ve Derin Öğrenmenin Kullanılması: Lisansüstü Tezlerde Sistematik Literatür Taraması”</li>
+<li>2- Mehmet ÇELİK “Muhasebe ve Denetimde Doğal Dil İşlemenin (NLP) Yeri”</li>
+<li>3-Ahmet Özdemir “Finans Sektörünü Yapay Zekâ İle Birlikte Okumak: Yenilikler, Fırsatlar ve Engeller”</li>
+<li>4-Seda AYDİN TUZCUAY “Finans Sektöründe Doğal Dil İşleme (Nlp) ile Rapor Kümelendirme ve Talep Bazlı Rapor Önerileri Oluşturma”</li>
+</ul>
+<p><u>ERTUĞRUL ATAŞ - ERCİYES ÜNİVERSİTESİ BİLGİSAYAR MÜHENDİSLİĞİ 2023</u></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-12-13 12:46:58.340344+00:00
+-->
